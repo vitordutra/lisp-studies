@@ -1,0 +1,6 @@
+(defun my-nth (index list)
+  (if (= index 0)
+  (car list)
+  (my-nth (1- index) (cdr list))
+  )
+)
